@@ -1,17 +1,33 @@
+const stepsWizzard = document.getElementsByClassName('button-step-wizard');
 const elem = document.getElementById('myBar');
 const buttonStep = document.getElementById('step_button');
-console.log(buttonStep.innerHTML)
-function move() {
+
+
+function stepWizard1() {
+    elem.style.width = 25 + "%";
+    buttonStep.innerHTML = 'step 2'
+}
+
+function stepWizard2() {
+    elem.style.width = 50 + "%";
+    buttonStep.innerHTML = 'step 3'
+}
+
+function stepWizard3() {
+    elem.style.width = 100 + "%";
+    buttonStep.innerHTML = 'Terminé'
+}
+
+
+function nextButton() {
     if (buttonStep.innerHTML === "step 1") {
-        elem.classList.add('step_1');
+        elem.style.width = 25 + "%";
         buttonStep.innerHTML = 'step 2'
     } else if (buttonStep.innerHTML === "step 2") {
-        elem.classList.remove('step_1');
-        elem.classList.add('step_2');
+        elem.style.width = 50 + "%";
         buttonStep.innerHTML = 'step 3'
     } else if (buttonStep.innerHTML === "step 3") {
-        elem.classList.remove('step_2');
-        elem.classList.add('step_3');
+        elem.style.width = 100 + "%";
         buttonStep.innerHTML = 'Terminé'
     } 
 }

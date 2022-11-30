@@ -26,6 +26,14 @@
     border-radius: 10px;
 }
 
+.progress-animation {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+}
+
 .progress.step_1 {
     -webkit-transition: 3s;
     -moz-transition: 3s;
@@ -89,4 +97,35 @@
     border: none;
     box-shadow: none;
     border-radius: 20px;
+}
+
+.wizard {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin-bottom: 25px;
+}
+
+.steps-wizard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.button-step-wizard {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Anek Devanagari', sans-serif;
+    cursor: pointer;
+    color: gray;
+    background: none;
+    border: none;
+    transition: transform .3s;
+}
+
+.button-step-wizard:hover {
+    transform: scale(1.5)
 }
