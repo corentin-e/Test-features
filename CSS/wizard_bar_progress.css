@@ -1,0 +1,92 @@
+.font {
+    font-family: 'Anek Devanagari', sans-serif;
+}
+
+.features_area {
+    padding-left: 25px;
+}
+
+.bar_progress {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.bar {
+    background-color: gray;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.progress {
+    background-color: orange;
+    width: 0%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.progress.step_1 {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    width: 25% !important;
+}
+
+.progress.step_1 {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    width: 25% !important;
+}
+
+.progress.step_2 {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    width: 50% !important;
+}
+
+.progress.step_3 {
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    width: 100% !important;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.button {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    font-size: 18px;
+    font-family: 'Anek Devanagari', sans-serif;
+    cursor: pointer;
+    border: 1px solid darkcyan;
+    border-radius: 20px;
+}
+
+.button:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    background: darkcyan;
+    color: white;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+}
