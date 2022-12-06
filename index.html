@@ -7,20 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/wizard_bar_progress.css">
+    <link rel="stylesheet" href="CSS/wizardCSS/wizard.css">
 </head>
 <body>
     <div class="features_area font">
 
         <!-- START Wizard bar progress -->
 
-        <h2>Wizard bar progress</h2>
+        <h2>Wizard & Bar progress</h2>
         <div class="wizard">
-            <div class="steps-wizard">
-                <button class="button-step-wizard" type="button" onclick="stepWizard(this)">step 1</button>
-                <button class="button-step-wizard" type="button" onclick="stepWizard(this)">step 2</button>
-                <button class="button-step-wizard" type="button" onclick="stepWizard(this)">step 3</button>
+            <div class="steps-wizard" id="stepsWizardArea">
             </div>
+            <template id="buttonStepTemplate">
+                <button class="button-step-wizard" type="button" onclick="stepWizard(this)"></button>
+            </template>
         </div>
         <div class="bar_progress">
             <div class="bar">
@@ -30,10 +30,11 @@
         <div class="buttons">
             <button class="button" type="button" onclick="nextButton()" id="step_button">step 1</button>
         </div>
-
         <!-- END Wizard bar progress -->
 
     </div>
-    <script type="text/javascript" src="JS/wizard_bar_progress.js"></script>
+    <script type="text/javascript" src="JS/wizardJS/data.js"></script>
+    <script type="text/javascript" src="JS/wizardJS/wizard_bar_progress.js"></script>
+    <script type="text/javascript" src="JS/wizardJS/wizard_step_button.js"></script>
 </body>
 </html>
